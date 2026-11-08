@@ -98,6 +98,70 @@ textarea {
   margin-left: 8px;
 }
 
+.hero {
+  background: linear-gradient(115deg, #faf9ff 0%, #f5f2ff 55%, #f0edff 100%);
+  overflow: hidden;
+}
+.hero-grid {
+  min-height: 570px;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: 35px;
+  padding-block: 65px;
+}
+.eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.65px;
+  color: var(--purple);
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+}
+.live-dot {
+  width: 7px;
+  height: 7px;
+  background: #5bc78c;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px #dff4e8;
+}
+
+.live-dot {
+  width: 7px;
+  height: 7px;
+  background: #5bc78c;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px #dff4e8;
+}
+.hero h1,
+.page-hero h1 {
+  font-family: var(--heading);
+  font-size: clamp(42px, 5.3vw, 68px);
+  letter-spacing: -3.5px;
+  line-height: 1.12;
+  margin: 20px 0;
+}
+.hero h1 span,
+.page-hero h1 span,
+.section-heading h2 span,
+.contact-aside h2 span,
+.registration-copy h2 span {
+  color: var(--purple);
+}
+.hero-text {
+  max-width: 510px;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.8;
+}
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-top: 29px;
+}
+
 .btn {
   border: 0;
   border-radius: 9px;
