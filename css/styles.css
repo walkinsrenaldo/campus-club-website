@@ -97,3 +97,42 @@ textarea {
 .nav-cta span {
   margin-left: 8px;
 }
+
+.btn {
+  border: 0;
+  border-radius: 9px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 14px 19px;
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+  transition:
+    transform 0.2s,
+    background 0.2s;
+}
+.btn:hover {
+  transform: translateY(-2px);
+}
+.btn-primary {
+  background: var(--purple);
+  color: white;
+}
+.btn-primary:hover {
+  background: var(--purple-dark);
+}
+.btn-light {
+  background: white;
+  color: var(--purple);
+}
+.text-link {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ink);
+}
+.text-link span {
+  color: var(--purple);
+  margin-left: 5px;
+}
