@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClubManagement | Events</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Main navigation">
+        <a class="brand" href="index.html"
+          ><span class="brand-mark">C</span
+          ><span
+            >Campus<span class="brand-accent">Club</span>Management</span
+          ></a
+        >
+        </button>
+        <div class="nav-links">
+          <a href="index.html">Home</a
+          ><a class="active" href="events.html">Events</a
+          ><a href="contact.html">Contact</a
+          ><a class="nav-cta" href="#event-list"
+            >Browse events <span>↗</span></a
+          >
+        </div>
+      </nav>
+    </header>
+    <main>
+       <section class="page-hero">
+        <div class="container">
+          <span class="eyebrow">MAKE IT A CAMPUS MOMENT</span>
+          <h1>Good things happen<br /><span>when we get together.</span></h1>
+          <p>
+            Find your next workshop, meetup or campus experience. Pick an event
+            and save your spot.
+          </p>
+          <div class="page-hero-shape">✳</div>
+        </div>
+      </section>
+      <section class="section container" id="event-list">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">THE CAMPUS CALENDAR</span>
+            <h2>Upcoming <span>events.</span></h2>
+          </div>
+          <p>There is always something worth showing up for.</p>
+        </div>
+        <div class="filter-row">
+          <span class="filter-label">Explore by interest</span>
+          <div class="filter-buttons" role="group" aria-label="Filter events">
+            <button class="filter-btn active" data-filter="all">
+              All events</button
+            ><button class="filter-btn" data-filter="creative">Creative</button
+            ><button class="filter-btn" data-filter="technology">
+              Technology</button
+            ><button class="filter-btn" data-filter="community">
+              Community</button
+            ><button class="filter-btn" data-filter="sports">Sports</button>
+          </div>
+        </div>
+        <div class="events-grid">
+          <article class="event-card" data-category="creative">
+            <div class="event-art event-art-pink">
+              <span>🎨</span><small>CREATE SOMETHING</small>
+            </div>
+            <div class="event-info">
+              <div class="event-meta">
+                <span>CREATIVE</span><span>FREE</span>
+              </div>
+              <h3>Creative Canvas Workshop</h3>
+              <p>
+                A relaxed art session to experiment, create and connect with
+                fellow creatives.
+              </p>
+              <div class="event-details">
+                <span>📅 November 18, 2026</span
+                ><span>🕒 2:00 PM – 4:00 PM</span
+                ><span>📍 Student Activity Room</span>
+              </div>
+              <button
+                class="btn btn-primary register-btn"
+                data-event="Creative Canvas Workshop"
+              >
+                Register for event <span>→</span>
+              </button>
+            </div>
+          </article>
+          <article class="event-card" data-category="technology">
+            <div class="event-art event-art-blue">
+              <span>💻</span><small>IDEAS INTO ACTION</small>
+            </div>
+            <div class="event-info">
+              <div class="event-meta">
+                <span>TECHNOLOGY</span><span>FREE</span>
+              </div>
+              <h3>Code & Connect Meetup</h3>
+              <p>
+                Meet fellow tech enthusiasts, share ideas and work through a fun
+                coding challenge.
+              </p>
+              <div class="event-details">
+                <span>📅 November 21, 2026</span
+                ><span>🕒 1:00 PM – 3:00 PM</span><span>📍 Computer Lab 2</span>
+              </div>
+              <button
+                class="btn btn-primary register-btn"
+                data-event="Code & Connect Meetup"
+              >
+                Register for event <span>→</span>
+              </button>
+            </div>
+          </article>
+          <article class="event-card" data-category="community">
+            <div class="event-art event-art-green">
+              <span>🌱</span><small>GIVE BACK</small>
+            </div>
+            <div class="event-info">
+              <div class="event-meta">
+                <span>COMMUNITY</span><span>FREE</span>
+              </div>
+              <h3>Campus Green-Up Day</h3>
+              <p>
+                Join other students for a hands-on day of campus clean-up and
+                environmental care.
+              </p>
+              <div class="event-details">
+                <span>📅 November 25, 2026</span
+                ><span>🕒 9:00 AM – 12:00 PM</span
+                ><span>📍 Main Campus Grounds</span>
+              </div>
+              <button
+                class="btn btn-primary register-btn"
+                data-event="Campus Green-Up Day"
+              >
+                Register for event <span>→</span>
+              </button>
+            </div>
+          </article>
+          <article class="event-card" data-category="sports">
+            <div class="event-art event-art-yellow">
+              <span>🏀</span><small>MOVE TOGETHER</small>
+            </div>
+            <div class="event-info">
+              <div class="event-meta"><span>SPORTS</span><span>FREE</span></div>
+              <h3>Friendly Sports Day</h3>
+              <p>
+                Bring your energy and team spirit for an afternoon of friendly
+                campus competition.
+              </p>
+              <div class="event-details">
+                <span>📅 November 28, 2026</span
+                ><span>🕒 10:00 AM – 1:00 PM</span
+                ><span>📍 Campus Sports Field</span>
+              </div>
+              <button
+                class="btn btn-primary register-btn"
+                data-event="Friendly Sports Day"
+              >
+                Register for event <span>→</span>
+              </button>
+            </div>
+          </article>
+        </div>
+        <p class="demo-note">
+          Demo project: event registrations are stored in this browser using
+          local storage. No external booking service is connected.
+        </p>
+      </section>
+        <section class="container"></section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="brand footer-brand" href="index.html"
+          ><span class="brand-mark">C</span
+          ><span
+            >Campus<span class="brand-accent">Club</span>Management</span
+          ></a
+        >
+        <p>Bringing campus communities together.</p>
+        <div class="footer-links">
+          <a href="index.html">Home</a><a href="events.html">Events</a
+          ><a href="contact.html">Contact</a>
+        </div>
+        <small
+          >© <span data-year></span> ClubManagement. Student project.</small
+        >
+      </div>
+    </footer>
+  </body>
+</html>
