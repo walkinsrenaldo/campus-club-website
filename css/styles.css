@@ -1,3 +1,17 @@
+:root {
+  --ink: #202238;
+  --muted: #707287;
+  --purple: #6554d9;
+  --purple-dark: #5140c4;
+  --lavender: #f0edff;
+  --green: #dff4e8;
+  --yellow: #fff2c9;
+  --pink: #ffe6ec;
+  --line: #e9e8f0;
+  --white: #fff;
+  --font: "DM Sans", sans-serif;
+  --heading: "Manrope", sans-serif;
+}
 * {
   box-sizing: border-box;
 }
