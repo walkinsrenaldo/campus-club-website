@@ -676,6 +676,135 @@ textarea {
   border-color: #ded8ff;
 }
 
+.contact-aside h2 span {
+  color: var(--purple);
+}
+
+.contact-aside h2 {
+  font-family: var(--heading);
+  font-size: clamp(31px, 3.5vw, 43px);
+  line-height: 1.2;
+  letter-spacing: -1.8px;
+  margin: 10px 0 0;
+}
+
+.privacy-note {
+  font-size: 10px;
+  color: #89899a;
+  margin-top: 20px;
+}
+
+.contact-aside > p {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.aside-note {
+  margin-top: 28px;
+  color: var(--purple);
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 85px;
+  align-items: start;
+}
+
+.contact-aside {
+  padding-top: 12px;
+}
+
+.contact-aside h2 {
+  font-size: 38px;
+  margin: 15px 0;
+}
+
+.contact-detail {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-top: 25px;
+}
+
+.detail-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 11px;
+  background: var(--lavender);
+  display: grid;
+  place-items: center;
+  color: var(--purple);
+}
+
+.contact-detail small,
+.contact-detail strong {
+  display: block;
+}
+
+.contact-detail small {
+  font-size: 9px;
+  color: var(--muted);
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.contact-detail strong {
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+.contact-form {
+  padding: 32px;
+}
+
+.form-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.privacy-note {
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.contact-hero {
+  padding-block: 68px 76px;
+}
+
+@media (max-width: 850px) {
+  body.sprint-2 .contact-layout {
+    gap: 35px;
+  }
+}
+
+@media (max-width: 650px) {
+  body.sprint-2 .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  body.sprint-2 .contact-aside h2 {
+    font-size: 34px;
+  }
+  body.sprint-2 .form-two {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  body.sprint-2 .contact-layout {
+    padding-block: 60px;
+  }
+  body.sprint-2 .contact-form {
+    padding: 23px;
+  }
+}
+
 .events-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
