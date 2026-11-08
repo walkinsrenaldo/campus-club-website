@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Browse campus events and register to attend."
+    />
     <title>ClubManagement | Events</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -10,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <script src="js/main.js" defer></script>
   </head>
   <body>
@@ -34,7 +38,7 @@
       </nav>
     </header>
     <main>
-       <section class="page-hero">
+      <section class="page-hero">
         <div class="container">
           <span class="eyebrow">MAKE IT A CAMPUS MOMENT</span>
           <h1>Good things happen<br /><span>when we get together.</span></h1>
@@ -174,7 +178,56 @@
           local storage. No external booking service is connected.
         </p>
       </section>
-        <section class="container"></section>
+      <section class="registration-section" id="registration">
+        <div class="container registration-wrap">
+          <div class="registration-copy">
+            <span class="eyebrow">SAVE YOUR SPOT</span>
+            <h2>Count me <span>in.</span></h2>
+            <p>
+              Complete the form to register for an event. You will see an
+              on-screen confirmation when your registration is saved.
+            </p>
+            <div class="registration-note">
+              ✦ <span>One small step towards a more connected campus.</span>
+            </div>
+          </div>
+          <form class="form-card" id="registration-form" novalidate>
+            <h3>Event registration</h3>
+            <p class="form-intro">All fields are required.</p>
+            <label for="reg-event">Choose an event</label
+            ><select id="reg-event" name="event" required>
+              <option value="">Select an event</option>
+              <option>Creative Canvas Workshop</option>
+              <option>Code & Connect Meetup</option>
+              <option>Campus Green-Up Day</option>
+              <option>Friendly Sports Day</option></select
+            ><label for="reg-name">Full name</label
+            ><input
+              id="reg-name"
+              name="name"
+              type="text"
+              placeholder="Your full name"
+              required
+              minlength="2"
+            /><label for="reg-email">Email address</label
+            ><input
+              id="reg-email"
+              name="email"
+              type="email"
+              placeholder="you@example.com"
+              required
+            /><button class="btn btn-primary btn-full" type="submit">
+              Complete registration <span>→</span>
+            </button>
+            <p
+              class="form-message"
+              id="registration-message"
+              role="status"
+              aria-live="polite"
+            ></p>
+          </form>
+        </div>
+      </section>
     </main>
     <footer class="site-footer">
       <div class="container footer-inner">
