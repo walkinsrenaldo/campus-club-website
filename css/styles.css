@@ -294,6 +294,71 @@ textarea {
   cursor: pointer;
 }
 
+.news-section {
+  background: #faf9fd;
+  padding: 82px 0;
+}
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.news-card {
+  background: white;
+  border: 1px solid #efedf5;
+  border-radius: 14px;
+  overflow: hidden;
+}
+.news-visual {
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.news-visual > span {
+  font-size: 58px;
+}
+.news-visual small {
+  position: absolute;
+  bottom: 13px;
+  left: 17px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  color: #68677b;
+}
+.news-visual-purple {
+  background: #eeeaff;
+}
+.news-visual-green {
+  background: #e5f5eb;
+}
+.news-visual-yellow {
+  background: #fff2ce;
+}
+.news-content {
+  padding: 20px;
+}
+.news-date {
+  font-size: 9px;
+  letter-spacing: 1px;
+  color: var(--purple);
+  font-weight: 700;
+}
+.news-content h3 {
+  font-family: var(--heading);
+  font-size: 16px;
+  line-height: 1.4;
+  margin: 9px 0;
+}
+.news-content p {
+  font-size: 12px;
+  color: var(--muted);
+  margin: 0;
+  line-height: 1.7;
+}
+
 /* Events */
 .demo-note,
 .privacy-note {
